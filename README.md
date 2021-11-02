@@ -1,2 +1,3 @@
 # setUp-webpack-boilerplate
-A webpack to bundle JavaScript
+
+In this project we build a simple and powerful webpack boilerplate, which we can later use as a starting point in all your JS projects
