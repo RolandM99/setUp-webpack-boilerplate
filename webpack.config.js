@@ -5,23 +5,23 @@ module.exports = {
   entry: './src/index.js',
   mode: 'development',
   devServer: {
-      static:'./dist',
+    static: './dist',
   },
   plugins: [
-      new HtmlWebpackPlugin({
-          template: './src/index.html'
-      }),
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),
   ],
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
-      rules: [
-          {
-              test: /\.css$/i,
-              use: ['style-loader', 'css-loader'],
-          },
-      ],
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
 };
